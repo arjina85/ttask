@@ -1338,8 +1338,6 @@ iframe {
   }
 
   .column.right {
-    font-size: 14px;
-    color: #A35F42;
     line-height: 28px;
   }
 
@@ -1352,4 +1350,5 @@ iframe {
       margin-left: 240px;
     }
   }
+
 
