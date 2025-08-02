@@ -53,13 +53,14 @@ padding:0px;
     align-items: center;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+
 #logo {
     float: left;
-    margin: 30px 0;
-    margin-left: 20px;
-    font-family: 'Fredoka One', sans-serif;
+    margin: 30px 0 30px 20px; /* Combined margin shorthand */
+    font-family: "Fredoka One", "Arial Rounded MT Bold", sans-serif !important;
     font-size: 36px;
-
     height: 20px;
     line-height: 38px;
 }
@@ -75,6 +76,7 @@ padding:0px;
             margin: 0;
             padding: 0;
             line-height: 1;
+			font-size: 36px !important; /* Added fixed size */
         }
 
         #special-heada {
@@ -86,12 +88,6 @@ padding:0px;
         #special-headc {
             -webkit-text-stroke: 1px #BF4611;
         }
-
-#logo a {
-    display: block;
-    text-decoration: none;
-    color: inherit;
-}
 .top-banner{
 float:right;
 margin-right:10px;
@@ -1373,6 +1369,7 @@ iframe {
       margin-left: 240px;
     }
   }
+
 
 
 
