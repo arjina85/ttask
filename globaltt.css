@@ -57,12 +57,35 @@ padding:0px;
     float: left;
     margin: 30px 0;
     margin-left: 20px;
-    font-family: 'Fredericka the Great', cursive; /* or switch to 'Dangrek' */
+    font-family: 'Fredoka One', sans-serif;
     font-size: 36px;
 
     height: 20px;
     line-height: 38px;
 }
+
+
+#logo a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+        #logo h2 {
+            display: inline-block; /* Makes headings flow horizontally */
+            margin: 0;
+            padding: 0;
+            line-height: 1;
+        }
+
+        #special-heada {
+            -webkit-text-stroke: 1px #420704;
+        }
+        #special-headb {
+            -webkit-text-stroke: 1px #E6E44C;
+        }
+        #special-headc {
+            -webkit-text-stroke: 1px #BF4611;
+        }
 
 #logo a {
     display: block;
@@ -1350,5 +1373,6 @@ iframe {
       margin-left: 240px;
     }
   }
+
 
 
