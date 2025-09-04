@@ -217,15 +217,15 @@ list-style:none;
 padding:5px;
 }
 .featured-ads li{
-color:#303030;
+color:#3fb15e;
 margin-bottom:5px;
 }
 .featured-ads li a{
-color:#3978e1;
+color:#38a4a5;
 text-decoration:underline;
 }
 .featured-ads li span{
-color:#009900;
+color:#d35400;
 text-decoration:none;
 font-size:14px;
 }
@@ -1369,6 +1369,7 @@ iframe {
       margin-left: 240px;
     }
   }
+
 
 
 
