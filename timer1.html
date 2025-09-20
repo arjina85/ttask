@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>timer</title>
+	
+</head>
+<body>
+<div style="max-width: 850px; width: 100%; background-color: #091548; backdrop-filter: solid(10px); border-radius: 20px; box-shadow: 0 15px 10px rgba(0, 0, 0, 0.1); overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.1);">
+    <div style="background: linear-gradient(to right, #3B3380 0%, #309494 88%); padding: 2px; text-align: center; border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+        <div style="font-family: 'Montserrat', sans-serif; font-size: 18px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 2px;">
+            <span style="color: #c4faff; text-shadow: 0 0 5px rgba(196, 250, 255, 0.7);">Attention:</span> <span style="color: #3CC7B7;">It's A Time Sensitive Offer. Please Act Fast! 🚨<p id="timer" style="display:inline; color:#D7D4CA; font-size: 12px; color: #c4faff; text-shadow: 0 0 5px rgba(196, 250, 255, 0.7);"></p></span>
+        </div>
+    </div>
+</div>
+   <script>const timerElement = document.getElementById("timer");
+  const countDownDate = new Date("Oct 1, 2025 15:37:25").getTime();
+
+  function updateCountdown() {
+    const now = new Date().getTime();
+    const distance = countDownDate - now;
+
+    if (distance <= 0) {
+      clearInterval(timerInterval);
+      timerElement.textContent = "Time's up!";
+      return;
+    }
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    timerElement.textContent = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+  }
+
+  updateCountdown(); // Show immediately
+  const timerInterval = setInterval(updateCountdown, 1000);</script> 
+</body>
+</html>
